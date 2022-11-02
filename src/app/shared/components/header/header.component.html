@@ -1,1 +1,26 @@
-<p>header works!</p>
+<header>
+  <nav>
+    <ul>
+      <li>
+        <img class="p-4" src="assets/img/logoblanco.png">
+      </li>
+
+      <li class="burguer" (click)="toggleMenu()">
+        <i class="material-icons"> {{isOpen ? "close" : "menu"}}</i>
+      </li>
+
+      <li class="menu" [class.is-open]="isOpen">
+        <a class="menu-item" href="">Home</a>
+        <a class="menu-item" href="">Ingresos</a>
+        <a class="menu-item" href="">Egresos</a>
+        <a class="menu-item" href="">Enviar Dinero</a>
+        <a class="menu-item" href="">Contactos</a>
+        <a class="menu-item" href="">Perfil</a>
+        <a class="menu-item" href="">Billeteras</a>
+        <a class="menu-item" (click)="salir()">Salir</a>
+        <a class="menu-item" href="">Mi perfil</a>
+      </li>
+
+    </ul>
+  </nav>
+</header>
